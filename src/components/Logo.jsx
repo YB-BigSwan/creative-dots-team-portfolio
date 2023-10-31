@@ -1,7 +1,7 @@
-import tempLogo from "../assets/temp-logo.png";
+import CdLogo from "../assets/CdLogo.svg";
 
 function Logo() {
-  return <img className="logo" src={tempLogo} alt="Temporary Logo" />;
+  return <img className="logo" src={CdLogo} alt="Temporary Logo" />;
 }
 
 export default Logo;

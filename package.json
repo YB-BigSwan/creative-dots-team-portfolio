@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://yb-bigswan.github.io/creative-dots-team-portfolio/members",
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=./",

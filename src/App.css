@@ -1,0 +1,92 @@
+/* General */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  background-color: black;
+}
+
+/* NavBar */
+
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5vw;
+  height: 50vh;
+  margin-left: -24.5vw;
+  margin-top: 15vh;
+  border-radius: 50px;
+  background-color: rgba(84, 83, 83, 0.463);
+}
+
+.navbar.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.nav-link {
+  color: white;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+/* Landing Page */
+
+h1 {
+  color: white;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 8vh;
+  text-align: center;
+  color: white;
+}
+
+.tagline {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.5; /* Adjust the line-height as needed to vertically center the text */
+}
+
+/* Carousel */
+.carousel {
+  background-color: rgba(134, 125, 125, 0.34);
+  border-radius: 20px;
+}
+
+.carousel_container {
+  width: 50vw;
+  height: 80vh;
+}
+
+.carousel-inner {
+  width: 50vw;
+}
+
+.memberDescription {
+  width: 26vw;
+  color: white;
+  padding: 10px;
+  margin-left: 12vw;
+  margin-bottom: 25vh;
+}

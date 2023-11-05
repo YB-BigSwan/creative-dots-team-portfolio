@@ -40,15 +40,18 @@ function MemberCarousel() {
           <img src={elinaCardImage} alt="Elina" />
           <Carousel.Caption>
             <p className="memberDescription">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Repellat, accusamus sint reiciendis nemo magnam dignissimos
-              similique laboriosam repudiandae id dolor, sed reprehenderit
-              deleniti incidunt exercitationem doloremque nobis quidem alias
-              quis!
+              I am a 3rd-year BITE student specializing in 
+              software engineering and digital services. During 
+              my freetime I enjoy baking, crocheting, and meeting 
+              with my friends. 
             </p>
             <div className="links">
-              <img src={linkedInLogo} alt="linkedIn" />
-              <img src={githubLogo} alt="GitHub" />
+              <a href="https://www.linkedin.com/in/elina-pekkanen-457a26264/" target="_blank">
+                <img src={linkedInLogo} alt="linkedIn" />
+              </a>
+              <a href="https://github.com/elinapekka" target="_blank">
+                <img src={githubLogo} alt="GitHub" />
+              </a>
             </div>
             <h3>Elina Pekkanen</h3>
           </Carousel.Caption>

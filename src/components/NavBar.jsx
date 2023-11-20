@@ -25,7 +25,7 @@ function NavBar() {
                 className="nav-link"
                 activeClassName="active"
               >
-                Projects
+                Project
               </NavLink>
               <NavLink
                 to="/storyboard"
@@ -33,6 +33,13 @@ function NavBar() {
                 activeClassName="active"
               >
                 Storyboard
+              </NavLink>
+              <NavLink
+                to="/journeymapping"
+                className="nav-link"
+                activeClassName="active"
+              >
+                Journey mapping
               </NavLink>
             </Nav>
         </Container>
@@ -59,6 +66,13 @@ function NavBar() {
             activeClassName="active"
           >
             Storyboard
+          </NavLink>
+          <NavLink
+            to="/journeymapping"
+            className="nav-link"
+            activeClassName="active"
+          >
+            Journey mapping
           </NavLink>
         </NavDropdown>
       

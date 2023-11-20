@@ -26,11 +26,14 @@ body {
   border-radius: 50px;
   background-color: transparent;
   justify-content: center;
-
 }
 
 .navbar-default {
   padding: 0;
+}
+
+.navbar .nav-link {
+  color: var(--basicLight);
 }
 
 .navbarWide .dropdown-nav .nav-link {
@@ -57,7 +60,7 @@ body {
 }
 
 .dropdown-nav {
-  visibility:hidden;
+  visibility: hidden;
 }
 
 /* Landing Page */
@@ -129,7 +132,7 @@ header {
   font-weight: 600;
 }
 
-.project-image{
+.project-image {
   width: 100%;
 }
 
@@ -138,12 +141,10 @@ header {
   margin: auto;
 }
 
-
 /* Phone styles */
 @media only screen and (max-width: 767px) {
-
   #root {
-    padding:5px;
+    padding: 5px;
   }
 
   .tagline {
@@ -155,7 +156,7 @@ header {
     padding: 0;
   }
 
-  .navbarWide{
+  .navbarWide {
     visibility: hidden;
   }
 
@@ -171,7 +172,8 @@ header {
     padding: 5px;
   }
 
-  .projectDescription, .memberDescription {
+  .projectDescription,
+  .memberDescription {
     height: fit-content;
     margin: auto;
     font-size: 1rem;
@@ -183,12 +185,11 @@ header {
     height: fit-content;
   }
 
-  .carousel-inner{
+  .carousel-inner {
     margin: auto;
   }
 
   .storyboard-image {
-    width:100%;
+    width: 100%;
   }
-
 }

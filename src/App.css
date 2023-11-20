@@ -118,6 +118,28 @@ header {
 
 .projectDescription {
   margin-bottom: 9vh;
-  color: var(--basicDark);
+  color: var(--basicLight);
   font-weight: 600;
+}
+
+/* Phone styles */
+@media only screen and (max-width: 767px) {
+  .tagline {
+    margin-top: 8vh;
+    font-size: 2rem;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20vh;
+    width: 80vw;
+  }
+
+  .navbar .nav-link {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+  }
 }

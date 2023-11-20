@@ -170,6 +170,7 @@ header {
 
   .dropdown-nav .nav-link {
     padding: 5px;
+    color: var(--basicDark);
   }
 
   .projectDescription,

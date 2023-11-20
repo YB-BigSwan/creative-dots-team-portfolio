@@ -18,21 +18,23 @@ body {
 
 /* NavBar */
 
-.navbar {
+.navbarWide {
   width: fit-content;
-  height: 7vh;
-  margin-bottom: 2vh;
-  border: 1px solid var(--basicLight);
+  height: fit-content;
+  margin-bottom: 1vh;
+  border: 1px solid var(--accentDark);
   border-radius: 50px;
   background-color: transparent;
+  justify-content: center;
+
 }
 
 .navbar-default {
   padding: 0;
 }
 
-.navbar .nav-link {
-  color: var(--basicLight);
+.navbarWide .dropdown-nav .nav-link {
+  color: var(--accentDark);
   font-size: 1.5em;
   font-family: "Quicksand", sans-serif;
 }
@@ -54,6 +56,10 @@ body {
   border-radius: 50px;
 }
 
+.dropdown-nav {
+  visibility:hidden;
+}
+
 /* Landing Page */
 
 .logo {
@@ -71,7 +77,7 @@ header {
   height: 9vh;
   padding-top: 2.5vh;
   text-align: center;
-  color: var(--basicLight);
+  color: var(--accentMedium);
 }
 
 .page-name {
@@ -100,6 +106,7 @@ header {
 
 .carousel-inner {
   width: 50vw;
+  margin: 0 auto;
 }
 
 .carousel-caption,
@@ -122,24 +129,66 @@ header {
   font-weight: 600;
 }
 
+.project-image{
+  width: 100%;
+}
+
+.storyboard-image {
+  width: auto;
+  margin: auto;
+}
+
+
 /* Phone styles */
 @media only screen and (max-width: 767px) {
+
+  #root {
+    padding:5px;
+  }
+
   .tagline {
     margin-top: 8vh;
-    font-size: 2rem;
-  }
-
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 20vh;
-    width: 80vw;
-  }
-
-  .navbar .nav-link {
-    display: flex;
-    flex-direction: row;
     font-size: 1rem;
   }
+
+  header {
+    padding: 0;
+  }
+
+  .navbarWide{
+    visibility: hidden;
+  }
+
+  .dropdown-nav {
+    visibility: visible;
+    align-items: center;
+    margin: auto;
+    width: 80vw;
+    border-radius: 50px;
+  }
+
+  .dropdown-nav .nav-link {
+    padding: 5px;
+  }
+
+  .projectDescription, .memberDescription {
+    height: fit-content;
+    margin: auto;
+    font-size: 1rem;
+    width: auto;
+  }
+
+  .carousel_container {
+    width: 40vw;
+    height: fit-content;
+  }
+
+  .carousel-inner{
+    margin: auto;
+  }
+
+  .storyboard-image {
+    width:100%;
+  }
+
 }

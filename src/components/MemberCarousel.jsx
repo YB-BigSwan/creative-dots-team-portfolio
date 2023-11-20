@@ -80,7 +80,7 @@ function MemberCarousel() {
                 <img src={linkedInLogo} alt="linkedIn" />
               </a>
             </div>
-            <h3>Ferran martí</h3>
+            <h3>Ferran Martí</h3>
           </Carousel.Caption>
         </Carousel.Item>
 

@@ -25,6 +25,13 @@ function NavBar() {
             >
               Projects
             </NavLink>
+            <NavLink
+              to="/storyboard"
+              className="nav-link"
+              activeClassName="active"
+            >
+              Storyboard
+            </NavLink>
           </Nav>
         </Container>
       </Navbar>

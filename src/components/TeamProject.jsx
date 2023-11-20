@@ -49,7 +49,8 @@ function TeamProject() {
         </Carousel.Item>
 
         <Carousel.Item>
-          <img src={storyboard} alt="storyboard" />
+          <img src={template} />
+          <Carousel.Caption><img src={storyboard} alt="storyboard" className="project-image"/></Carousel.Caption>
         </Carousel.Item>
 
         <Carousel.Item>

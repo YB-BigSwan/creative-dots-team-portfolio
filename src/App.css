@@ -22,7 +22,7 @@ body {
   width: fit-content;
   height: 7vh;
   margin-bottom: 2vh;
-  border: 1px solid var(--basicLight);
+  border: 1px solid var(--accentDark);
   border-radius: 50px;
   background-color: transparent;
 }
@@ -32,7 +32,7 @@ body {
 }
 
 .navbar .nav-link {
-  color: var(--basicLight);
+  color: var(--accentDark);
   font-size: 1.5em;
   font-family: "Quicksand", sans-serif;
 }
@@ -71,7 +71,7 @@ header {
   height: 9vh;
   padding-top: 2.5vh;
   text-align: center;
-  color: var(--basicLight);
+  color: var(--accentMedium);
 }
 
 .page-name {
@@ -100,6 +100,7 @@ header {
 
 .carousel-inner {
   width: 50vw;
+  margin: 0 auto;
 }
 
 .carousel-caption,
@@ -122,6 +123,16 @@ header {
   font-weight: 600;
 }
 
+.project-image{
+  width: 100%;
+}
+
+.storyboard-image {
+  width: auto;
+  margin: auto;
+}
+
+
 /* Phone styles */
 @media only screen and (max-width: 767px) {
   .tagline {
@@ -142,4 +153,19 @@ header {
     flex-direction: row;
     font-size: 1rem;
   }
+
+  
+  .projectDescription, .memberDescription {
+    height: fit-content;
+    margin: auto;
+  }
+
+  .carousel-inner{
+    margin: auto;
+  }
+
+  .storyboard-image {
+    width:100%;
+  }
+
 }

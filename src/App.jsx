@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LandingPage from "./components/LandingPage";
 import TeamProject from "./components/TeamProject"; // Import the TeamProject component
+import Storyboard from "./components/Storyboard";
 import NavBar from "./components/NavBar";
 import "./App.css";
 
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/members" element={<LandingPage />} />
           <Route path="/projects" element={<TeamProject />} />{" "}
+          <Route path="/storyboard" element={<Storyboard />}/>{" "}
           <Route exact path="/" element={<LandingPage />} />
         </Routes>
       </div>

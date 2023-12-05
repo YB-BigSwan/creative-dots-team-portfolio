@@ -43,11 +43,19 @@ function NavBar() {
               </NavLink>
 
               <NavLink
-                to="/prototype"
+                to="/prototype1"
                 className="nav-link"
                 activeClassName="active"
               >
-                Prototype
+                Prototype V1
+              </NavLink>
+
+              <NavLink
+                to="/prototype2"
+                className="nav-link"
+                activeClassName="active"
+              >
+                Prototype V2
               </NavLink>
             </Nav>
           </Container>

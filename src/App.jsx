@@ -3,7 +3,8 @@ import LandingPage from "./components/LandingPage";
 import TeamProject from "./components/TeamProject"; // Import the TeamProject component
 import Storyboard from "./components/Storyboard";
 import JourneyMapping from "./components/JourneyMapping";
-import Prototype from "./components/Prototype";
+import Prototype1 from "./components/Prototype1";
+import Prototype2 from "./components/Prototype2";
 import NavBar from "./components/NavBar";
 import "./App.css";
 
@@ -17,7 +18,8 @@ function App() {
           <Route path="/projects" element={<TeamProject />} />{" "}
           <Route path="/storyboard" element={<Storyboard />} />{" "}
           <Route path="/journeymapping" element={<JourneyMapping />} />{" "}
-          <Route path="/prototype" element={<Prototype />} />{" "}
+          <Route path="/prototype1" element={<Prototype1 />} />{" "}
+          <Route path="/prototype2" element={<Prototype2 />} />{" "}
           <Route exact path="/" element={<LandingPage />} />
         </Routes>
       </div>

@@ -7,7 +7,6 @@ import persona2 from "../assets/project-photos/persona2.png";
 import journeyMap from "../assets/project-photos/journeymap.png";
 import empathyMap from "../assets/project-photos/empathy-map.png";
 import blueprint from "../assets/project-photos/blueprint.png";
-import template from "../assets/project-photos/template.png";
 import "../App.css";
 
 function JourneyMapping() {
@@ -27,7 +26,6 @@ function JourneyMapping() {
         <h2 className="tagline">Connecting the dots to success</h2>
       </header>
       <Carousel activeIndex={index} onSelect={handleSelect} interval={3000}>
-
         <Carousel.Item>
           <img src={persona1} alt="user persona" />
         </Carousel.Item>

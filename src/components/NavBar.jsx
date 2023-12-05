@@ -10,7 +10,7 @@ function NavBar() {
     <>
       <Navbar className="navbar" expand="lg">
         <div className="navbarWide">
-        <Container>
+          <Container>
             <Nav className="navbar-nav custom-nav">
               <NavLink
                 to="/members"
@@ -41,23 +41,26 @@ function NavBar() {
               >
                 Journey mapping
               </NavLink>
+
+              <NavLink
+                to="/prototype"
+                className="nav-link"
+                activeClassName="active"
+              >
+                Prototype
+              </NavLink>
             </Nav>
-        </Container>
+          </Container>
         </div>
-      
-        <NavDropdown title="Menu" className="navbar-nav custom-nav dropdown-nav">
-          <NavLink
-            to="/members"
-            className="nav-link"
-            activeClassName="active"
-          >
+
+        <NavDropdown
+          title="Menu"
+          className="navbar-nav custom-nav dropdown-nav"
+        >
+          <NavLink to="/members" className="nav-link" activeClassName="active">
             Members
           </NavLink>
-          <NavLink
-            to="/projects"
-            className="nav-link"
-            activeClassName="active"
-          >
+          <NavLink to="/projects" className="nav-link" activeClassName="active">
             Projects
           </NavLink>
           <NavLink
@@ -75,10 +78,7 @@ function NavBar() {
             Journey mapping
           </NavLink>
         </NavDropdown>
-      
-
       </Navbar>
-
     </>
   );
 }

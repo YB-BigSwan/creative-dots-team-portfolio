@@ -51,6 +51,14 @@ function NavBar() {
               </NavLink>
 
               <NavLink
+                to="/usability-testing"
+                className="nav-link"
+                activeClassName="active"
+              >
+                Testing
+              </NavLink>
+
+              <NavLink
                 to="/prototype2"
                 className="nav-link"
                 activeClassName="active"

@@ -21,7 +21,7 @@ body {
 .navbarWide {
   width: fit-content;
   height: fit-content;
-  margin-bottom: 1vh;
+  margin-bottom: 0.7rem;
   border: 1px solid var(--accentDark);
   border-radius: 50px;
   background-color: transparent;
@@ -34,24 +34,20 @@ body {
 
 .navbar .nav-link {
   color: var(--basicLight);
+  border-radius: 50px;
 }
 
 .navbarWide .dropdown-nav .nav-link {
   color: var(--accentDark);
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-family: "Quicksand", sans-serif;
 }
 
 .navbar .nav-link:hover {
   color: var(--basicDark);
-  background-image: linear-gradient(
-    -45deg,
-    var(--accentLightest),
-    var(--accentLight),
-    var(--accentMedium),
-    var(--accentDark)
-  );
+  background-color: var(--accentLight);
   border-radius: 50px;
+  transition: 0.5s ease-in-out;
 }
 
 .navbar .active {
@@ -76,9 +72,9 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 9vh;
-  padding-top: 2.5vh;
+  width: 97rem;
+  height: 9rem;
+  padding-top: 1.5rem;
   text-align: center;
   color: var(--accentMedium);
 }
@@ -103,12 +99,12 @@ header {
 }
 
 .carousel_container {
-  width: 50vw;
-  height: 80vh;
+  width: 50rem;
+  height: 80rem;
 }
 
 .carousel-inner {
-  width: 50vw;
+  width: 60rem;
   margin: 0 auto;
 }
 
@@ -118,16 +114,16 @@ header {
 }
 
 .memberDescription {
-  width: 26vw;
+  width: 28rem;
   color: var(--basicLight);
   padding: 10px;
-  margin-left: 12vw;
-  margin-bottom: 20vh;
+  margin-left: 16rem;
+  margin-bottom: 10rem;
   font-size: 1.3rem;
 }
 
 .projectDescription {
-  margin-bottom: 9vh;
+  margin-bottom: 9rem;
   color: var(--basicLight);
   font-weight: 600;
 }
@@ -141,6 +137,10 @@ header {
   margin: auto;
 }
 
+iframe {
+  border-radius: 20px;
+}
+
 /* Phone styles */
 @media only screen and (max-width: 767px) {
   #root {
@@ -148,7 +148,7 @@ header {
   }
 
   .tagline {
-    margin-top: 8vh;
+    margin-top: 8rem;
     font-size: 1rem;
   }
 
@@ -164,13 +164,13 @@ header {
     visibility: visible;
     align-items: center;
     margin: auto;
-    width: 80vw;
+    width: 80rem;
     border-radius: 50px;
   }
 
   .dropdown-nav .nav-link {
     padding: 5px;
-    color: var(--basicDark);
+    color: var(--accentDark);
   }
 
   .projectDescription,
@@ -182,7 +182,7 @@ header {
   }
 
   .carousel_container {
-    width: 40vw;
+    width: 40rem;
     height: fit-content;
   }
 

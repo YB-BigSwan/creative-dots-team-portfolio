@@ -59,6 +59,7 @@ body {
 
 .dropdown-nav {
   visibility: hidden;
+  width: 0;
 }
 
 /* Landing Page */
@@ -113,6 +114,10 @@ header {
 .carousel-caption,
 .carousel-caption h3 {
   font-family: "Quicksand", sans-serif;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 5%;
 }
 
 .memberDescription {

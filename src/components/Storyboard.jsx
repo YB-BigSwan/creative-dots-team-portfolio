@@ -1,7 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import Carousel from "react-bootstrap/Carousel";
-import Logo from "./Logo";
 import sb1 from "../assets/storyboard/sb1.png";
 import sb2 from "../assets/storyboard/sb2.png";
 import sb3 from "../assets/storyboard/sb3.png";
@@ -29,13 +27,6 @@ function Storyboard() {
 
   return (
     <>
-      <header>
-        <Link to="/" className="logo-link">
-          <Logo />
-        </Link>
-
-        <h2 className="tagline">Connecting the dots to success</h2>
-      </header>
       <Carousel activeIndex={index} onSelect={handleSelect} interval={5000}>
 
         <Carousel.Item>

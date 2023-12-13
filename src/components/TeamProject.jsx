@@ -1,7 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import Carousel from "react-bootstrap/Carousel";
-import Logo from "./Logo";
 import template from "../assets/project-photos/template.png";
 import "../App.css";
 
@@ -14,13 +12,6 @@ function TeamProject() {
 
   return (
     <>
-      <header>
-        <Link to="/" className="logo-link">
-          <Logo />
-        </Link>
-
-        <h2 className="tagline">Connecting the dots to success</h2>
-      </header>
       <Carousel activeIndex={index} onSelect={handleSelect} interval={3000}>
         <Carousel.Item>
           <img src={template} />

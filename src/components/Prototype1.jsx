@@ -1,17 +1,8 @@
-import { Link } from "react-router-dom";
-import Logo from "./Logo";
 import "../App.css";
 
 function Prototype1() {
   return (
     <>
-      <header>
-        <Link to="/" className="logo-link">
-          <Logo />
-        </Link>
-
-        <h2 className="tagline">Connecting the dots to success</h2>
-      </header>
 
       <iframe
         style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}

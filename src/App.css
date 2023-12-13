@@ -14,6 +14,7 @@
 
 body {
   background-color: var(--basicDark);
+  place-items: start;
 }
 
 /* NavBar */
@@ -34,7 +35,7 @@ body {
 }
 
 .navbar .nav-link {
-  color: var(--basicLight);
+  color: var(--accentMedium);
   border-radius: 50px;
 }
 
@@ -52,7 +53,7 @@ body {
 }
 
 .navbar .active {
-  background-color: var(--basicLight);
+  background-color: var(--accentLight);
   border-radius: 50px;
 }
 
@@ -63,13 +64,14 @@ body {
 /* Landing Page */
 
 .logo {
-  position: absolute;
   top: 0;
   left: 0;
   padding: 20px;
 }
 
 header {
+  display: flex;
+  align-items: center;
   top: 0;
   left: 0;
   width: 100%;
@@ -137,8 +139,18 @@ header {
   margin: auto;
 }
 
+.storyboard-content {
+  transform: translateY(-25%);
+}
+
 iframe {
   border-radius: 20px;
+}
+
+.journeymap-image {
+  width: 100%;
+  top: 25%;
+  transform: translateY(-25%);
 }
 
 /* Phone styles */

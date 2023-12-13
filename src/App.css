@@ -14,6 +14,7 @@
 
 body {
   background-color: var(--basicDark);
+  place-items: start;
 }
 
 /* NavBar */
@@ -21,6 +22,7 @@ body {
 .navbarWide {
   width: fit-content;
   height: fit-content;
+  margin: auto;
   margin-bottom: 0.7rem;
   border: 1px solid var(--accentDark);
   border-radius: 50px;
@@ -33,7 +35,7 @@ body {
 }
 
 .navbar .nav-link {
-  color: var(--basicLight);
+  color: var(--accentMedium);
   border-radius: 50px;
 }
 
@@ -51,29 +53,29 @@ body {
 }
 
 .navbar .active {
-  background-color: var(--basicLight);
+  background-color: var(--accentLight);
   border-radius: 50px;
 }
 
 .dropdown-nav {
   visibility: hidden;
+  width: 0;
 }
 
 /* Landing Page */
 
 .logo {
-  position: absolute;
   top: 0;
   left: 0;
   padding: 20px;
 }
 
 header {
-  position: absolute;
+  display: flex;
+  align-items: center;
   top: 0;
   left: 0;
-  width: 97rem;
-  height: 9rem;
+  width: 100%;
   padding-top: 1.5rem;
   text-align: center;
   color: var(--accentMedium);
@@ -90,6 +92,7 @@ header {
   font-family: "Quicksand", sans-serif;
   font-size: 2.5rem;
   font-weight: 600;
+  margin: auto;
 }
 
 /* Carousel */
@@ -111,6 +114,10 @@ header {
 .carousel-caption,
 .carousel-caption h3 {
   font-family: "Quicksand", sans-serif;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 5%;
 }
 
 .memberDescription {
@@ -137,8 +144,18 @@ header {
   margin: auto;
 }
 
+.storyboard-content {
+  transform: translateY(-25%);
+}
+
 iframe {
   border-radius: 20px;
+}
+
+.journeymap-image {
+  width: 100%;
+  top: 25%;
+  transform: translateY(-25%);
 }
 
 /* Phone styles */

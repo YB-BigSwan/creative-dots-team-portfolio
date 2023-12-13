@@ -1,7 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import Carousel from "react-bootstrap/Carousel";
-import Logo from "./Logo";
 import sb1 from "../assets/storyboard/sb1.png";
 import sb2 from "../assets/storyboard/sb2.png";
 import sb3 from "../assets/storyboard/sb3.png";
@@ -29,18 +27,11 @@ function Storyboard() {
 
   return (
     <>
-      <header>
-        <Link to="/" className="logo-link">
-          <Logo />
-        </Link>
-
-        <h2 className="tagline">Connecting the dots to success</h2>
-      </header>
       <Carousel activeIndex={index} onSelect={handleSelect} interval={5000}>
 
         <Carousel.Item>
           <img src={template} />
-          <Carousel.Caption>
+          <Carousel.Caption className="storyboard-content">
             <h4>Scene 1</h4>
             <img src={sb1} alt="storyboard1" className="storyboard-image"/>
             <p><br />Filip is an English upper-secondary school student who just 
@@ -51,7 +42,7 @@ function Storyboard() {
 
         <Carousel.Item>
           <img src={template} />
-          <Carousel.Caption>
+          <Carousel.Caption className="storyboard-content">
             <h4>Scene 2</h4>
             <img src={sb2} alt="storyboard2" className="storyboard-image"/>
             <p><br />Filip has found it difficult to find sports events that are 
@@ -62,7 +53,7 @@ function Storyboard() {
 
         <Carousel.Item>
           <img src={template} />
-          <Carousel.Caption>
+          <Carousel.Caption className="storyboard-content">
             <h4>Scene 3</h4>
             <img src={sb3} alt="storyboard3" className="storyboard-image"/>
             <p><br />One day while scrolling through Instagram, he came across 
@@ -72,7 +63,7 @@ function Storyboard() {
 
         <Carousel.Item>
           <img src={template} />
-          <Carousel.Caption>
+          <Carousel.Caption className="storyboard-content">
             <h4>Scene 4</h4>
             <img src={sb4} alt="storyboard4" className="storyboard-image"/>
             <p><br />Filip was intrigued by the concept and downloaded the app. 
@@ -83,7 +74,7 @@ function Storyboard() {
 
         <Carousel.Item>
           <img src={template} />
-          <Carousel.Caption>
+          <Carousel.Caption className="storyboard-content">
             <h4>Scene 5</h4>
             <img src={sb5} alt="storyboard5" className="storyboard-image"/>
             <p><br />Browsing through the app, Filip found a map functionality 
@@ -93,7 +84,7 @@ function Storyboard() {
 
         <Carousel.Item>
           <img src={template} />
-          <Carousel.Caption>
+          <Carousel.Caption className="storyboard-content">
             <h4>Scene 6</h4>
             <img src={sb6} alt="storyboard6" className="storyboard-image"/>
             <p><br />Filip is only interested in volleyball events held in 
@@ -104,7 +95,7 @@ function Storyboard() {
 
         <Carousel.Item>
           <img src={template} />
-          <Carousel.Caption>
+          <Carousel.Caption className="storyboard-content">
             <h4>Scene 7</h4>
             <img src={sb7} alt="storyboard7" className="storyboard-image"/>
             <p><br />Having found a nice event that fits his qualifications, 
@@ -114,7 +105,7 @@ function Storyboard() {
 
         <Carousel.Item>
           <img src={template} />
-          <Carousel.Caption>
+          <Carousel.Caption className="storyboard-content">
             <h4>Scene 8</h4>
             <img src={sb8} alt="storyboard8" className="storyboard-image"/>
             <p><br />Filip receives a reward for signing up for his first event, 
@@ -124,7 +115,7 @@ function Storyboard() {
 
         <Carousel.Item>
           <img src={template} />
-          <Carousel.Caption>
+          <Carousel.Caption className="storyboard-content">
             <h4>Scene 9</h4>
             <img src={sb9} alt="storyboard9" className="storyboard-image"/>
             <p><br />Filip attends the event, making friends and memories.</p>
@@ -133,7 +124,7 @@ function Storyboard() {
 
         <Carousel.Item>
           <img src={template} />
-          <Carousel.Caption>
+          <Carousel.Caption className="storyboard-content">
             <h4>Scene 10</h4>
             <img src={sb10} alt="storyboard10" className="storyboard-image"/>
             <p><br />At the event, Filip scans a QR code for attendance from 
@@ -143,7 +134,7 @@ function Storyboard() {
 
         <Carousel.Item>
           <img src={template} />
-          <Carousel.Caption>
+          <Carousel.Caption className="storyboard-content">
             <h4>Scene 11</h4>
             <img src={sb11} alt="storyboard11" className="storyboard-image"/>
             <p><br />Filip now has enough points to claim a discount from 
@@ -153,7 +144,7 @@ function Storyboard() {
 
         <Carousel.Item>
           <img src={template} />
-          <Carousel.Caption>
+          <Carousel.Caption className="storyboard-content">
             <h4>Scene 12</h4>
             <img src={sb12} alt="storyboard12" className="storyboard-image"/>
             <p><br />With his new ball, Filip tries to search events for football 
@@ -163,7 +154,7 @@ function Storyboard() {
 
         <Carousel.Item>
           <img src={template} />
-          <Carousel.Caption>
+          <Carousel.Caption className="storyboard-content">
             <h4>Scene 13</h4>
             <img src={sb13} alt="storyboard13" className="storyboard-image"/>
             <p><br />Unable to find football-related events, Filip decides to 
@@ -173,7 +164,7 @@ function Storyboard() {
 
         <Carousel.Item>
           <img src={template} />
-          <Carousel.Caption>
+          <Carousel.Caption className="storyboard-content">
             <h4>Scene 14</h4>
             <img src={sb14} alt="storyboard14" className="storyboard-image"/>
             <p><br /> Part of event creating, he books a venue for the event.
@@ -183,7 +174,7 @@ function Storyboard() {
 
         <Carousel.Item>
           <img src={template} />
-          <Carousel.Caption>
+          <Carousel.Caption className="storyboard-content">
             <h4>Scene 15</h4>
             <img src={sb15} alt="storyboard15" className="storyboard-image"/>
             <p><br />Filip hosts the event, making great memories again. In the future, 
@@ -194,9 +185,9 @@ function Storyboard() {
 
         <Carousel.Item>
           <img src={template} />
-          <Carousel.Caption>
+          <Carousel.Caption className="storyboard-content">
             <h4>the end.</h4>
-            </Carousel.Caption>
+          </Carousel.Caption>
         </Carousel.Item>
 
       </Carousel>
